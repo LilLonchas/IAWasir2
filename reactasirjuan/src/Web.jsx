@@ -1,8 +1,15 @@
 import React from 'react'
-
-const Web = () => {
+import { Cabecera1,Cabecera,Cabecera2 } from './cabecera'
+function Web() {
   return (
-    <div>Juan Ruiz Rubio  </div>
+    <div>
+    <div>Juan Ruiz</div>
+    <Cabecera/>
+    <Cabecera1 mensaje="Que guay es react" otro="Dennnis dios de los criticos"/>
+    <Cabecera1 mensaje="Que guay es react" otro="Dennnis dios de los criticos"/>
+  
+    </div>
+
   )
 }
 
