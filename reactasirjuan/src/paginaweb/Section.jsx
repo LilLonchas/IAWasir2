@@ -2,7 +2,12 @@ import React from 'react'
 
 function Section() {
   return (
-    <div>Section</div>
+    <section>
+    <article>
+      Tarjetas
+    </article>
+    </section>
+
   )
 }
 
