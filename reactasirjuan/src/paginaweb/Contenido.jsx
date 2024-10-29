@@ -3,16 +3,22 @@ import Nav from './Nav'
 import Section from './Section'
 import Aside from './Aside'
 
-export default function Contenido() {
+import './contenido.module.css'
+import Rutas from './Rutas'
+
+function Contenido() {
   return (
     <>
     <Nav/>
     <main>
-        <Section/>
         <Aside/>
+        {/* <Section/> */}
+        <section>
+          <Rutas/>np
+        </section>
     </main>
-    
-    
     </>
   )
 }
+
+export default Contenido

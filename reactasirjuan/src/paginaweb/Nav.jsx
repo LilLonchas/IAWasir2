@@ -1,7 +1,13 @@
 import React from 'react'
-
-export default function Nav() {
+import { IoIosContact } from "react-icons/io";
+function Nav() {
   return (
-    <div>Nav</div>
+    <nav>
+        <a href="#">Inicio</a> - 
+        <a href="#">Noticias</a> - 
+        <a href="#"><IoIosContact />Contacto</a> - 
+    </nav>
   )
 }
+
+export default Nav
