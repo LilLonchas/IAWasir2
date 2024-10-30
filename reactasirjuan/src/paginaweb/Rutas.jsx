@@ -35,5 +35,5 @@ function MySkills() {
 function Producto() {
     //Lectura del parámetro de la URL
     const params = useParams();
-    return <h2>Parámetro introducido: {params.numero}</h2>;
+    return <h2>Parámetro elegido {params.numero}</h2>;
 }
