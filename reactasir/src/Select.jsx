@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import heroes from './heroes.json'; // Asegúrate de tener el archivo JSON en la misma carpeta
-
+import "./paginaWeb/select.module.css"
 function SuperheroSelect() {
   const [selectedHero, setSelectedHero] = useState(""); // Estado para el héroe seleccionado
 

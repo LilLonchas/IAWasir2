@@ -14,7 +14,8 @@ main section{
 
 main aside{
     width:20%;
-    background-color:yellowgreen;
+    background-color:antiquewhite;
+    font-size: 20px;
 }
 
 @media (max-width:800px){
@@ -30,3 +31,8 @@ main aside{
     justify-content: center;
     
   }
+nav{
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+}
