@@ -3,7 +3,8 @@ main{
     height:500px;
     width:100%;
     display:flex;
-    flex:row nowrap;
+    flex-wrap: wrap;
+    
 }
 
 main section{
@@ -26,6 +27,6 @@ main aside{
 
   }
   section{
-    height: 500px;
+    justify-content: center;
     
   }
