@@ -1,13 +1,13 @@
 import React from 'react'
-import './footer.module.css'
+
 /* Iconos MaterialUI */
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LanguageIcon from '@mui/icons-material/Language';
 
-function Footer({RRSS}) {
+function RedesSociales({RRSS}) {
   return (
-    <footer>
+    <div>
         {
             RRSS.map((red,index) => {
             if (red==="Facebook"){
@@ -23,8 +23,8 @@ function Footer({RRSS}) {
         }
         {/*Enlace del instituto */}
         <a href="https://iescuravalera.es" > <img src="/logo.png" width="50" alt="logoIES"/> IES Cura Valera </a>
-    </footer>
+    </div>
   )
 }
 
-export default Footer
+export default RedesSociales

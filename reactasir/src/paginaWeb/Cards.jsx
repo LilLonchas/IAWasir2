@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function Tarjeta() {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '12rem' }}>
       <Card.Img variant="top" src="/paisaje.jpeg" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
