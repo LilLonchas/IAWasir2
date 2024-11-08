@@ -41,10 +41,8 @@ function Contenido() {
         <Route path="/about" element={<About/>} />
         <Route path="*" element={<NotFound/>} />
         </Routes>  
-        <Tarjeta/>
-        <Tarjeta/>
-        <Tarjeta/>
-        <ControlledCarousel/>
+        
+        
         </section>
     
     </main>
@@ -55,7 +53,12 @@ function Contenido() {
 
 export default Contenido
 function Home() {
-  return ;
+  return <section>
+    <Tarjeta/>
+    <Tarjeta/>
+    <Tarjeta/>
+    <ControlledCarousel/>
+  </section> ; 
 }
 
 //Sólo se verá con /about en la URL
