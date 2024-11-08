@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import heroes from './heroes.json'; // Asegúrate de tener el archivo JSON en la misma carpeta
-import "./paginaWeb/select.module.css"
+import styles from "./paginaWeb/select.module.css"; // Importa el archivo CSS correctamente
+
 function SuperheroSelect() {
   const [selectedHero, setSelectedHero] = useState(""); // Estado para el héroe seleccionado
 
@@ -13,7 +14,7 @@ function SuperheroSelect() {
 
   return (
     <div>
-      <h1 >Seleccione un Superhéroe de Marvel</h1>
+      <h1>Seleccione un Superhéroe de Marvel</h1>
       <select value={selectedHero} onChange={handleChange}>
         <option value="">Seleccione un superhéroe</option>
         {/* Mapea solo los héroes de Marvel para crear las opciones en el select */}
@@ -26,7 +27,7 @@ function SuperheroSelect() {
 
       {/* Mostrar detalles del héroe seleccionado */}
       {selectedHero && (
-        <div>
+        <div className={styles["details-container"]}>
           <h2>Detalles del Superhéroe</h2>
           <p><strong>Superhéroe:</strong> {selectedHero}</p>
           {/* Buscar el héroe seleccionado para mostrar más detalles */}

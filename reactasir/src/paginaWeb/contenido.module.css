@@ -14,6 +14,7 @@ main section{
 
 main aside{
     width:20%;
+    text-align: center;
     background-color:antiquewhite;
     font-size: 20px;
 }
