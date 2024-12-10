@@ -72,8 +72,7 @@ function About2() {
 function Noticias() {
     return <div>
       <h1>NOTICIAS DE HUÉRCAL OVERA</h1>
-      <p>SE HA TERMINADO LA ALERTA ROJA POR INUNDACIÓN </p>
-      <hr/>
+      <Tarjeta/>
       <Outlet/>
     </div>
   }

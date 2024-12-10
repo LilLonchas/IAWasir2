@@ -1,20 +1,23 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import noticias from "../noticias.json"; 
 
-function Tarjeta() {
+function Tarjetas() {
   return (
-    <Card style={{ width: '12rem' }}>
-      <Card.Img variant="top" src="/paisaje.jpeg" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center' }}>
+      {noticias.map((noticia, index) => (
+        <Card key={index} style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="/paisaje.jpeg" alt={`Imagen de ${noticia.titulo}`} />
+          <Card.Body>
+            <Card.Title>{noticia.titulo}</Card.Title>
+            <Card.Text>{noticia.descripcion}</Card.Text>
+            <Button variant="primary">Leer más</Button>
+          </Card.Body>
+        </Card>
+      ))}
+    </div>
   );
 }
 
-export default Tarjeta;
+export default Tarjetas;

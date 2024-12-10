@@ -25,7 +25,7 @@ function Nav() {
       </Dropdown>
       <Dropdown className="d-inline mx-2">
         <Dropdown.Toggle variant="secondary" id="dropdownMenuLink" style={{backgroundColor:"red"}}>
-        <TbNetwork />Noticias
+        <TbNetwork />Defensa
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
